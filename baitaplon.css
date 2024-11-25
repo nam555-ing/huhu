@@ -1,0 +1,85 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7px ;
+    scroll-behavior: smooth; 
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    border-bottom: 2px solid black;
+}
+header .logo {
+    color:rgb(47, 255, 75) ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 157, 0);
+}
+.navbar{
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+      
+}
+header .navbar a{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    color: greenyellow;
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: white;
+    background-color: greenyellow;
+}
+.background::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://dogifood.vn/Images/news/2008030203-am-thuc-mien-trung.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(70%);
+    z-index: -1;
+        
+}
+.dish{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+a {
+    color: blue;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: red; 
+}
